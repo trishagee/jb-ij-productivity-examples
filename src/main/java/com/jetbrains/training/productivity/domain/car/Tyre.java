@@ -7,7 +7,7 @@ import static java.math.BigDecimal.ONE;
 
 public record Tyre(String brand, String model, BigDecimal pressure, PressureUnit pressureUnit) {
 
-    static Tyre createIncorrect() {
+    public static Tyre createIncorrect() {
         return new Tyre("MODEL", "BRAND", ONE, BAR);
     }
 }
