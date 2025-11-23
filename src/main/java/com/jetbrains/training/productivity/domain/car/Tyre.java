@@ -1,4 +1,4 @@
-package com.jetbrains.training.productivity.rundebug.car;
+package com.jetbrains.training.productivity.domain.car;
 
 import java.math.BigDecimal;
 

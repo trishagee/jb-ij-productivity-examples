@@ -1,6 +1,6 @@
-package com.jetbrains.training.productivity.rundebug.car;
+package com.jetbrains.training.productivity.domain.car;
 
-import com.jetbrains.training.productivity.rundebug.Color;
+import com.jetbrains.training.productivity.domain.Color;
 
 public class Car {
     private final Color color;

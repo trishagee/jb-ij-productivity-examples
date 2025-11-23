@@ -1,6 +1,7 @@
 package com.jetbrains.training.productivity.rundebug;
 
-import com.jetbrains.training.productivity.rundebug.car.Car;
+import com.jetbrains.training.productivity.domain.Color;
+import com.jetbrains.training.productivity.domain.car.Car;
 
 import static java.lang.IO.println;
 

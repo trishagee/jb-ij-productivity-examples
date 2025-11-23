@@ -1,4 +1,4 @@
-package com.jetbrains.training.productivity.rundebug.car;
+package com.jetbrains.training.productivity.domain.car;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -13,13 +13,10 @@ class WheelTest {
         Wheel wheel = Wheel.create();
 
         // then
-        assertAll(() -> {
-                    assertNotNull(wheel);
-                    assertEquals(WheelMaterial.STEEL, wheel.getWheelMaterial());
-                    assertEquals("GENERIC", wheel.getTyre().getBrand());
-                    assertEquals("NONE", wheel.getTyre().getModel());
-                }
-        );
+        assertNotNull(wheel);
+        assertAll(() -> assertEquals(WheelMaterial.STEEL, wheel.getWheelMaterial()),
+                  () -> assertEquals("GENERIC", wheel.getTyre().getBrand()),
+                  () -> assertEquals("NONE", wheel.getTyre().getModel()));
     }
 
 }

@@ -1,8 +1,8 @@
-package com.jetbrains.training.productivity.rundebug.car;
+package com.jetbrains.training.productivity.domain.car;
 
 import java.math.BigDecimal;
 
-import static com.jetbrains.training.productivity.rundebug.car.PressureUnit.PSI;
+import static com.jetbrains.training.productivity.domain.car.PressureUnit.PSI;
 
 public class Wheel {
     private final WheelMaterial wheelMaterial;
