@@ -1,9 +1,6 @@
-package com.jetbrains.training.productivity.rundebug;
+package com.jetbrains.training.productivity.rundebug.car;
 
-import com.jetbrains.training.productivity.rundebug.car.PressureUnit;
-import com.jetbrains.training.productivity.rundebug.car.Tyre;
-import com.jetbrains.training.productivity.rundebug.car.Wheel;
-import com.jetbrains.training.productivity.rundebug.car.WheelMaterial;
+import com.jetbrains.training.productivity.rundebug.Color;
 
 import java.math.BigDecimal;
 

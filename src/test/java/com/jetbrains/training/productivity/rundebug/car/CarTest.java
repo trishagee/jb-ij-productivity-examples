@@ -1,7 +1,5 @@
-package com.jetbrains.training.productivity.rundebug;
+package com.jetbrains.training.productivity.rundebug.car;
 
-import com.jetbrains.training.productivity.rundebug.car.Wheel;
-import com.jetbrains.training.productivity.rundebug.car.WheelMaterial;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
