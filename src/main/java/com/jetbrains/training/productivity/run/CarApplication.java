@@ -1,4 +1,4 @@
-package com.jetbrains.training.productivity.rundebug;
+package com.jetbrains.training.productivity.run;
 
 import com.jetbrains.training.productivity.domain.Color;
 import com.jetbrains.training.productivity.domain.car.Car;
