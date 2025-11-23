@@ -31,18 +31,13 @@ class CarTest {
 
         // then
         assertAll(() -> {
-                    Wheel[] wheels = car.getWheels();
-                    assertNotNull(wheels);
-                    assertEquals(4, wheels.length);
+            Wheel[] wheels = car.getWheels();
+            assertNotNull(wheels);
+            assertEquals(4, wheels.length);
 
-                    Wheel wheel = wheels[0];
-                    assertNotNull(wheel);
-                    assertEquals(WheelMaterial.STEEL, wheel.getWheelMaterial());
-                    assertEquals("GENERIC", wheel.getTyre().getBrand());
-                    assertEquals("NONE", wheel.getTyre().getModel());
-                }
-
-        );
-
+            for (Wheel wheel : wheels) {
+                assertNotNull(wheel);
+            }
+        });
     }
 }

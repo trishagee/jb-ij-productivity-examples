@@ -1,5 +1,9 @@
 package com.jetbrains.training.productivity.rundebug.car;
 
+import java.math.BigDecimal;
+
+import static com.jetbrains.training.productivity.rundebug.car.PressureUnit.PSI;
+
 public class Wheel {
     private final WheelMaterial wheelMaterial;
     private final Tyre tyre;
@@ -18,6 +22,6 @@ public class Wheel {
     }
 
     static Wheel create() {
-        return null;
+        return new Wheel(WheelMaterial.STEEL, new Tyre("GENERIC", "NONE", new BigDecimal(20), PSI));
     }
 }

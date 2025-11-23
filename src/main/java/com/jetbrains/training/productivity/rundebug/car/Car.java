@@ -2,10 +2,6 @@ package com.jetbrains.training.productivity.rundebug.car;
 
 import com.jetbrains.training.productivity.rundebug.Color;
 
-import java.math.BigDecimal;
-
-import static com.jetbrains.training.productivity.rundebug.car.PressureUnit.PSI;
-
 public class Car {
     private final Color color;
     private final String make;
@@ -17,7 +13,7 @@ public class Car {
         this.make = make;
         this.model = model;
         for (int i = 0; i < wheels.length; i++) {
-            wheels[i] = new Wheel(WheelMaterial.STEEL, new Tyre("GENERIC", "NONE", new BigDecimal(20), PSI));
+            wheels[i] = Wheel.create();
         }
     }
 
