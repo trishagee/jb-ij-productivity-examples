@@ -15,8 +15,8 @@ class WheelTest {
         // then
         assertNotNull(wheel);
         assertAll(() -> assertEquals(WheelMaterial.STEEL, wheel.getWheelMaterial()),
-                  () -> assertEquals("GENERIC", wheel.getTyre().getBrand()),
-                  () -> assertEquals("NONE", wheel.getTyre().getModel()));
+                  () -> assertEquals("GENERIC", wheel.getTyre().brand()),
+                  () -> assertEquals("NONE", wheel.getTyre().model()));
     }
 
 }
