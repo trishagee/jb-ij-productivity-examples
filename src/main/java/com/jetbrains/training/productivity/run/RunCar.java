@@ -5,7 +5,7 @@ import com.jetbrains.training.productivity.domain.car.Car;
 
 import static java.lang.IO.println;
 
-public class CarApplication     {
+public class RunCar {
     static void main() {
         Car car = new Car("Ford", "Mondeo", Color.BLACK);
         println(car);
