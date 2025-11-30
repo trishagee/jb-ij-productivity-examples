@@ -3,8 +3,6 @@ package com.jetbrains.training.productivity.domain.car;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.math.BigDecimal;
-
 import static com.jetbrains.training.productivity.domain.car.PressureUnit.BAR;
 import static java.math.BigDecimal.ONE;
 import static org.junit.jupiter.api.Assertions.*;

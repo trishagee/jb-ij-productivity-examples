@@ -1,5 +1,6 @@
 plugins {
     java
+    groovy
 }
 
 repositories {
@@ -7,7 +8,9 @@ repositories {
 }
 
 dependencies {
-}
+    // Spock test dependencies
+    testImplementation("org.spockframework:spock-core:2.4-M1-groovy-4.0")
+    implementation("org.apache.groovy:groovy:4.0.29")}
 
 testing {
     suites {
