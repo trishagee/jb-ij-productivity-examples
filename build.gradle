@@ -8,29 +8,17 @@ repositories {
 }
 
 dependencies {
-    // Spock test dependencies
     testImplementation 'org.spockframework:spock-core:2.4-M7-groovy-4.0'
     testImplementation 'org.apache.groovy:groovy:4.0.29'
-    testImplementation 'org.junit.jupiter:junit-jupiter:6.0.1'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
-//testing {
-//    suites {
-//        test(JvmTestSuite) {
-//            useJUnitJupiter('6.0.1')
-//        }
-//    }
-//}
-
-test {
-    useJUnitPlatform()
-
-    testLogging {
-        events "started", "passed", "skipped", "failed"
+testing {
+    suites {
+        test {
+            useJUnitJupiter('6.0.1')
+        }
     }
 }
-
 
 java {
     toolchain {

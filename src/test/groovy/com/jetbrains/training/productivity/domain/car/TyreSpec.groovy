@@ -13,7 +13,7 @@ class TyreSpec extends Specification {
         then:
         tyre != null
         verifyAll(tyre) {
-            brand() == "BRAND2"
+            brand() == "BRAND"
             model() == "MODEL"
             pressure() == ONE
             pressureUnit() == BAR
