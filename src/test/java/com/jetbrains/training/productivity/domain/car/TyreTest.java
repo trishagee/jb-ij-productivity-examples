@@ -3,8 +3,11 @@ package com.jetbrains.training.productivity.domain.car;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import java.math.BigDecimal;
+
+import static com.jetbrains.training.productivity.domain.car.PressureUnit.BAR;
+import static java.math.BigDecimal.ONE;
+import static org.junit.jupiter.api.Assertions.*;
 
 class TyreTest {
     @Test
@@ -27,8 +30,10 @@ class TyreTest {
 
         // then
         assertNotNull(tyre);
-        assertEquals("BRAND", tyre.brand());
-        assertEquals("MODEL", tyre.model());
+        assertAll(() -> assertEquals("BRAND", tyre.brand()),
+                  () -> assertEquals("MODEL", tyre.model()),
+                  () -> assertEquals(ONE, tyre.pressure()),
+                  () -> assertEquals(BAR, tyre.pressureUnit()));
     }
 
 }
