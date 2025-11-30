@@ -10,4 +10,8 @@ public record Tyre(String brand, String model, BigDecimal pressure, PressureUnit
     public static Tyre createIncorrect() {
         return new Tyre("MODEL", "BRAND", ONE, BAR);
     }
+
+    public static Tyre create() {
+        return new Tyre("BRAND", "MODEL", ONE, BAR);
+    }
 }
